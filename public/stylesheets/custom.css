@@ -1,9 +1,9 @@
 .container {
-  width: 710px;
+  width: 900px;
 }
 
 body {
-  background: #dae3ed;
+  background: #77bcd6;
 }
 
 header {
@@ -96,9 +96,9 @@ a.signup_button {
 /* Round corners */
 
 .round {
-  -moz-border-radius:    10px;
-  -webkit-border-radius: 10px;
-  border-radius:         10px;
+  -moz-border-radius:    7px;
+  -webkit-border-radius: 7px;
+  border-radius:         7px;
 }
 
 /* Footer */
@@ -106,7 +106,7 @@ a.signup_button {
 footer {
   text-align: center;
   margin-top: 10px;
-  width: 710px;
+  width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
