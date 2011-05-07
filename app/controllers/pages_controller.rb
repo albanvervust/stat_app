@@ -5,7 +5,7 @@ class PagesController < ApplicationController
   end
 
   def contact
-    @title = "Contactez-nous!"
+    @title = "Contactez-nous"
   end
   
   def about
@@ -13,7 +13,7 @@ class PagesController < ApplicationController
   end
   
   def aide
-    @title = "Besoin d'aide?"
+    @title = "Besoin d'aide ?"
   end
 
 end
