@@ -4,7 +4,6 @@ StatApp::Application.routes.draw do
 
   resources :infos
 
-  match '/', :to => 'pages#home'
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'
   match '/aide',    :to => 'pages#aide'
