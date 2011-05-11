@@ -1,4 +1,4 @@
-<h1>Listing infos</h1>
+<h1>Liste des infos utilisateurs</h1>
 
 <table>
   <tr>
@@ -13,9 +13,9 @@
   <tr>
     <td><%= info.age %></td>
     <td><%= info.taille %></td>
-    <td><%= link_to 'Show', info %></td>
-    <td><%= link_to 'Edit', edit_info_path(info) %></td>
-    <td><%= link_to 'Destroy', info, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Voir', info %></td>
+    <td><%= link_to 'Modifier', edit_info_path(info) %></td>
+    <td><%= link_to 'Supprimer', info, :confirm => 'Etes-vous sûr?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>

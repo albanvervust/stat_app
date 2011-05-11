@@ -1,4 +1,4 @@
-<h1>Listing sports</h1>
+<h1>Liste du niveau d'activite</h1>
 
 <table>
   <tr>
@@ -11,13 +11,13 @@
 <% @sports.each do |sport| %>
   <tr>
     <td><%= sport.activite %></td>
-    <td><%= link_to 'Show', sport %></td>
-    <td><%= link_to 'Edit', edit_sport_path(sport) %></td>
-    <td><%= link_to 'Destroy', sport, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Voir', sport %></td>
+    <td><%= link_to 'Retour', edit_sport_path(sport) %></td>
+    <td><%= link_to 'Supprimer', sport, :confirm => 'Etes-vous sûr?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Sport', new_sport_path %>
+<%= link_to 'Nouveau niveau activite', new_sport_path %>

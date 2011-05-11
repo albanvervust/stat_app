@@ -17,8 +17,12 @@
   </div>
   <div class="field">
     <%= f.label :taille %><br />
-    <%= f.text_field :taille %>
+    <%= f.number_field :taille %>
   </div>
+<p>
+	<!--MODIFY-->
+<%= select_tag("info[sport_ids][]", options_from_collection_for_select(Sport.all, 'id', "activite"), {:include_blank => true}) %>
+</p>
   <div class="actions">
     <%= f.submit %>
   </div>

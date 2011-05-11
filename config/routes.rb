@@ -8,6 +8,8 @@ StatApp::Application.routes.draw do
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'
   match '/aide',    :to => 'pages#aide'
+  match '/calcul',    :to => 'infos#new'
+
 
   root :to => 'pages#home'
   
