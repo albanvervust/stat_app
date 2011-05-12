@@ -10,20 +10,26 @@
       </ul>
     </div>
   <% end %>
+	<p>
+	</p>
+  <div class="field"> 
+    <%= f.label :age ,'Votre âge :' %>
+    <%= f.text_field :age %><br />
+  </div>
+  <div class="field"> 
+    <%= f.label :taille ,'Votre taille :'%>
+    <%= f.text_field :taille %><br />
+  </div>
 
-  <div class="field">
-    <%= f.label :age %><br />
-    <%= f.text_field :age %>
+  <div class="field"> 
+    <%= f.label :sexe ,'Vous êtes un(e):' %>
+	<%= f.check_box :sexe %>
   </div>
-  <div class="field">
-    <%= f.label :taille %><br />
-    <%= f.number_field :taille %>
-  </div>
-<p>
-	<!--MODIFY-->
-<%= select_tag("info[sport_ids][]", options_from_collection_for_select(Sport.all, 'id', "activite"), {:include_blank => true}) %>
+
+<p> Vous pratiquez un sport :
+<%= select_tag("info[sport_ids]", options_from_collection_for_select(Sport.all, 'id', "activite"), {:include_blank => false}) %>
 </p>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Calculer'%>
   </div>
 <% end %>
