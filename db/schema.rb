@@ -26,4 +26,16 @@ ActiveRecord::Schema.define(:version => 20110512163210) do
     t.datetime "updated_at"
   end
 
+  create_table "villes", :force => true do |t|
+    t.string   "country"
+    t.string   "city"
+    t.string   "accentcity"
+    t.string   "region"
+    t.integer  "population"
+    t.string   "latitude"
+    t.string   "longitude"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
 end

@@ -1,5 +1,7 @@
 StatApp::Application.routes.draw do
   
+  get "villes/new"
+
   resources :sports
 
   resources :infos
