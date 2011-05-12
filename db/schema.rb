@@ -12,6 +12,19 @@
 
 ActiveRecord::Schema.define(:version => 20110512170448) do
 
+  create_table "infos", :force => true do |t|
+    t.integer  "age"
+    t.integer  "taille"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "sports", :force => true do |t|
+    t.string   "activite"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "villes", :force => true do |t|
     t.string   "country"
     t.string   "city"
