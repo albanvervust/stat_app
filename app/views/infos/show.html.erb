@@ -10,6 +10,14 @@
   <%= @info.taille %>
 </p>
 
+<p>
+  <b>Sex:</b>
+  <%= if @info.sexe == true
+	"Male"
+	else "Female"
+	end		
+%>
+</p>
 
 <%= link_to 'Modifier', edit_info_path(@info) %> |
 <%= link_to 'Retour', root_path %>

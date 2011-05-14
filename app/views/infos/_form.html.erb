@@ -1,35 +1,17 @@
-<%= form_for(@info) do |f| %>
-  <% if @info.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@info.errors.count, "error") %> prohibited this info from being saved:</h2>
+<%= simple_form_for(@info) do |f| %>
 
-      <ul>
-      <% @info.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-	<p>
-	</p>
-  <div class="field"> 
-    <%= f.label :age ,'Votre âge :' %>
-    <%= f.text_field :age %><br />
-  </div>
-  <div class="field"> 
-    <%= f.label :taille ,'Votre taille :'%>
-    <%= f.text_field :taille %><br />
-  </div>
+  <%= f.error_messages %>
 
-  <div class="field"> 
-    <%= f.label :sexe ,'Vous êtes un(e):' %>
-	<%= f.check_box :sexe %>
-  </div>
+	<%= f.datetime_select :age, :prompt => { :year => 'Year'}, :start_year => Date.today.year, :end_year => Date.today.year + 2 %>
 
-<p> Vous pratiquez un sport :
-<%= select_tag("info[sport_ids]", options_from_collection_for_select(Sport.all, 'id', "activite"), {:include_blank => false}) %>
-</p>
-  <div class="actions">
-    <%= f.submit 'Calculer'%>
-  </div>
-<% end %>
+	<%= f.input :taille, :collection => 100..220, :include_blank => false, :label => "Height (cm) "%>
+	
+	<%= f.input :sexe, :as => :radio, :label => "Sex", :collection => [["Homme", true], ["Femme", false]]%>
+	
+	<%= f.button :submit, 'Calculation' %>
+	
+<%end%>
+	
+	
+	
+
