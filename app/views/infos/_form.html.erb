@@ -2,7 +2,7 @@
 
   <%= f.error_messages %>
 
-	<%= f.datetime_select :age, :prompt => { :year => 'Year'}, :start_year => Date.today.year, :end_year => Date.today.year + 2 %>
+	<%= f.input :age, :prompt => { :year => '- Year -', :month => "- Month -", :day => "- Day -"}, :start_year => Date.today.year - 111, :end_year => Date.today.year - 10 %>
 
 	<%= f.input :taille, :collection => 100..220, :include_blank => false, :label => "Height (cm) "%>
 	
