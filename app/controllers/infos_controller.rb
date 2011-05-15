@@ -44,8 +44,9 @@ class InfosController < ApplicationController
 
     respond_to do |format|
       if @info.save
-        format.html { redirect_to(@info, :notice => 'Info was successfully created.') }
+        format.html { redirect_to(@info) }
         format.xml  { render :xml => @info, :status => :created, :location => @info }
+        flash[:success] = "Info was successfully created!"
       else
         format.html { render :action => "new" }
         format.xml  { render :xml => @info.errors, :status => :unprocessable_entity }

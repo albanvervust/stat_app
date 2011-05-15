@@ -13,13 +13,13 @@
   <tr>
     <td><%= info.age %></td>
     <td><%= info.taille %></td>
-    <td><%= link_to 'Voir', info %></td>
-    <td><%= link_to 'Modifier', edit_info_path(info) %></td>
-    <td><%= link_to 'Supprimer', info, :confirm => 'Etes-vous sûr?', :method => :delete %></td>
+    <td><%= link_to 'See', info %></td>
+    <td><%= link_to 'Modify', edit_info_path(info) %></td>
+    <td><%= link_to 'Delete', info, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'Nouveau calcul', new_info_path %>
+<%= link_to 'New calcul', new_info_path %>
