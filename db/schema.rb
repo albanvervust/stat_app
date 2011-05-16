@@ -10,14 +10,26 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110514172134) do
+ActiveRecord::Schema.define(:version => 20110516201555) do
+
+  create_table "countries", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "infos", :force => true do |t|
+    t.date     "age"
     t.integer  "taille"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "sexe"
-    t.date     "age"
+  end
+
+  create_table "regions", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "sports", :force => true do |t|

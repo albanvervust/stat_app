@@ -1,7 +1,7 @@
 class CreateInfos < ActiveRecord::Migration
   def self.up
     create_table :infos do |t|
-      t.integer :age
+      t.date :age
       t.integer :taille
 
       t.timestamps

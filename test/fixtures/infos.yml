@@ -1,3 +1,15 @@
+# == Schema Information
+# Schema version: 20110512170448
+#
+# Table name: infos
+#
+#  id         :integer         not null, primary key
+#  age        :integer
+#  taille     :integer
+#  created_at :datetime
+#  updated_at :datetime
+#
+
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
