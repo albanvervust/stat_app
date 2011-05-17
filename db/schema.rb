@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110516201555) do
+ActiveRecord::Schema.define(:version => 20110517193608) do
 
   create_table "countries", :force => true do |t|
     t.string   "name"
@@ -39,13 +39,13 @@ ActiveRecord::Schema.define(:version => 20110516201555) do
   end
 
   create_table "villes", :force => true do |t|
-    t.string   "country"
-    t.string   "city"
-    t.string   "accentcity"
-    t.string   "region"
+    t.integer  "country_id", :limit => 255
+    t.string   "asciiname"
+    t.string   "isoname"
+    t.integer  "region_id",  :limit => 255
     t.integer  "population"
-    t.string   "latitude"
-    t.string   "longitude"
+    t.decimal  "latitude"
+    t.decimal  "longitude"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

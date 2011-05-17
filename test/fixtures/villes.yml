@@ -1,16 +1,16 @@
 # == Schema Information
-# Schema version: 20110512170448
+# Schema version: 20110517193608
 #
 # Table name: villes
 #
 #  id         :integer         not null, primary key
-#  country    :string(255)
-#  city       :string(255)
-#  accentcity :string(255)
-#  region     :string(255)
+#  country_id :integer(255)
+#  asciiname  :string(255)
+#  isoname    :string(255)
+#  region_id  :integer(255)
 #  population :integer
-#  latitude   :string(255)
-#  longitude  :string(255)
+#  latitude   :decimal(, )
+#  longitude  :decimal(, )
 #  created_at :datetime
 #  updated_at :datetime
 #
