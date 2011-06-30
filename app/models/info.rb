@@ -12,7 +12,15 @@
 #
 
 class Info < ActiveRecord::Base
+  attr_accessible :sexe, :age, :taille, :instant_places
   has_and_belongs_to_many :sport
-#@belongs_to :ville
+  attr_reader :instant_places
+  belongs_to :ville
   validates_presence_of :age, :taille, :message => "Fill the form properly."
+  
+  def instant_places=(ids)
+    self.ville_ids = ids.split(",")
+  end
+  
+  
 end

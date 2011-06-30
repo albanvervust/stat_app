@@ -1,6 +1,10 @@
 <%= simple_form_for(@info) do |f| %>
 
-  <%= f.error_messages %>
+<%= f.error_messages %>
+
+<%= f.simple_fields_for :ville do |ef| %>
+		<%= ef.input :instant_places, :label => 'Your city ?' %>
+<%- end %>
 
 	<%= f.input :age, :prompt => { :year => '- Year -', :month => "- Month -", :day => "- Day -"}, :start_year => Date.today.year - 111, :end_year => Date.today.year - 10 -%>
 
@@ -11,4 +15,3 @@
 	<%= f.button :submit, 'Calculation' -%>
 	
 <%end%>	
-

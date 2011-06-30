@@ -7,6 +7,7 @@ class InfosController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @infos }
+      format.json { render :json => @infos.map(&:attributes) }
     end
   end
 

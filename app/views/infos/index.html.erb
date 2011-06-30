@@ -4,7 +4,7 @@
   <tr>
     <th>Age</th>
     <th>Taille</th>
-    <th></th>
+    <th>Sexe</th>
     <th></th>
     <th></th>
   </tr>
@@ -13,9 +13,10 @@
   <tr>
     <td><%= info.age %></td>
     <td><%= info.taille %></td>
+    <td><%= info.sexe %></td>
     <td><%= link_to 'Show', info %></td>
     <td><%= link_to 'Modify', edit_info_path(info) %></td>
-    <td><%= link_to 'Delete', info, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Delete', info, :method => :delete, :confirm => 'Are you sure?', %></td>
   </tr>
 <% end %>
 </table>

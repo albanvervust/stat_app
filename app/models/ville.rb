@@ -18,5 +18,5 @@
 class Ville < ActiveRecord::Base
   belongs_to :region
   belongs_to :country
-  #has_many :info
+  has_many :info
 end

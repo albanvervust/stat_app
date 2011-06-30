@@ -1,20 +1,21 @@
 StatApp::Application.routes.draw do
   
-  get "villes/new"
+  #get "villes/new"
 
   resources :sports
-
+  resources :villes
   resources :infos
 
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'
   match '/aide',    :to => 'pages#aide'
   match '/calcul',    :to => 'infos#new'
+  match '/form',  :to => 'villes#form'
 
 
   root :to => 'pages#home'
   
-  # get "pages/home"
+  # get "pages/home" 
   # get "pages/contact"
   # get "pages/about"
 
