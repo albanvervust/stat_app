@@ -1,10 +1,10 @@
 class VillesController < ApplicationController
   
   def index
-    @ville = Ville.all
+    @villes = Ville.all
     respond_to do |format|
       format.html
-      format.json { render :json => @ville }
+      format.json { render :json => @villes }
     end
   end
 end

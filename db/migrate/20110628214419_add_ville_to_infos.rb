@@ -4,6 +4,6 @@ class AddVilleToInfos < ActiveRecord::Migration
   end
 
   def self.down
-    remove_column :infos, :ville_id
+    remove_column :infos, :ville_id, :integer
   end
 end
