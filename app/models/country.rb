@@ -11,4 +11,5 @@
 
 class Country < ActiveRecord::Base
   has_many :ville
+  has_many :infos
 end

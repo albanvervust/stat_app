@@ -2,9 +2,12 @@
 
 <%= f.error_messages %>
 
-<%= f.simple_fields_for :ville do |ef| %>
+<!--<%= f.simple_fields_for :country do |ef| %>
 		<%= ef.input :instant_places, :label => 'Your city ?' %>
-<%- end %>
+<%- end %>-->
+
+	<%= f.label :country_tokens %>
+	<%= f.text_field :country_tokens %>
 
 	<%= f.input :age, :prompt => { :year => '- Year -', :month => "- Month -", :day => "- Day -"}, :start_year => Date.today.year - 111, :end_year => Date.today.year - 10 -%>
 

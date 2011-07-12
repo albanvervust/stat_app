@@ -5,13 +5,14 @@ StatApp::Application.routes.draw do
   resources :sports
   resources :villes
   resources :infos
+  resources :countries
 
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'
   match '/aide',    :to => 'pages#aide'
   match '/calcul',    :to => 'infos#new'
   match '/form',  :to => 'villes#form'
-
+  
 
   root :to => 'pages#home'
   
