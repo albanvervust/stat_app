@@ -24,7 +24,7 @@ class Info < ActiveRecord::Base
   #end
   
   def country_tokens=(id)
-    #self.country_id = ids.split(",")
+    self.country_id = id
   end
   
 end

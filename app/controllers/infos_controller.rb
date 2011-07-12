@@ -15,8 +15,6 @@ class InfosController < ApplicationController
   # GET /infos/1.xml
   def show
     @info = Info.find(params[:id])
-    #@country_name = Country.name
-    #@country_name = Info.Countries
     
     respond_to do |format|
       format.html # show.html.erb
