@@ -10,6 +10,6 @@
 #
 
 class Country < ActiveRecord::Base
-  has_many :ville
+  has_many :villes
   has_many :infos
 end

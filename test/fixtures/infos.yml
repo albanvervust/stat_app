@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20110516201555
+# Schema version: 20110712202032
 #
 # Table name: infos
 #
@@ -9,6 +9,7 @@
 #  created_at :datetime
 #  updated_at :datetime
 #  sexe       :boolean
+#  country_id :integer
 #
 
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html

@@ -1,0 +1,17 @@
+<p>
+  <b>Name:</b>
+  <%= @ville.isoname %>
+</p>
+
+<p>
+  <b>Pays:</b>
+  <%= @ville.country.name %>
+</p>
+
+<p>
+  <b>Région:</b>
+  <%= @ville.region.name %>
+</p>
+
+<%= link_to 'Modify', edit_info_path(@ville) %> |
+<%= link_to 'Back', root_path %>
