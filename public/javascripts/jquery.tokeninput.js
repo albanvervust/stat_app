@@ -17,7 +17,7 @@ var DEFAULT_SETTINGS = {
     deleteText: "&times;",
     searchDelay: 300,
     minChars: 1,
-    tokenLimit: null,
+    tokenLimit: 1,
     jsonContainer: null,
     method: "GET",
     contentType: "json",
