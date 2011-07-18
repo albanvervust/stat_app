@@ -1,0 +1,19 @@
+<h1><%=@country.name%></h1>
+
+<p id="notice"><%= notice %></p><p>
+ 
+
+ <b>Poids:</b>
+<% unless @country.infos.empty? %>
+        <table class="infos" summary="Country infos">
+          <%= render @infos %>
+        </table>
+        <%= will_paginate @infos %>
+      <% end %>
+
+<b>Poids total:</b>
+<%=@country.infos.sum('taille')%>
+</p>
+
+<%= link_to 'Modify', edit_info_path(@ville) %> |
+<%= link_to 'Back', root_path %>
