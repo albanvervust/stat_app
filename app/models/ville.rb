@@ -16,7 +16,8 @@
 #
 
 class Ville < ActiveRecord::Base
+  attr_accessible :isoname
   belongs_to :region
   belongs_to :country
-  has_many :info
+  has_many :infos
 end
