@@ -2,6 +2,11 @@
   width: 900px;
 }
 
+#lol {
+	color: white;
+	background-color: #0f589A;
+}
+
 body {
   background: #77bcd6;
 }

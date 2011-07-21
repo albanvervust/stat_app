@@ -1,4 +1,5 @@
 class CountriesController < ApplicationController
+  
   def index
     @countries = Country.where("name like ?", "%#{params[:q]}%")
     respond_to do |format|

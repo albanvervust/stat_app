@@ -7,7 +7,7 @@ $(function() {
 });
 
 $(function() {
-  $("#info_ville_tokens").tokenInput("/villes.json", {
+  $("#info_instant_places").tokenInput("/villes.json", {
     crossDomain: false,
   });
 });

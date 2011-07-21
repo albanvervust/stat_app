@@ -12,7 +12,7 @@
 class Country < ActiveRecord::Base
 
   has_many :ville
-  has_many :infos  
+  has_many :infos
   has_many :villes
   has_many :infos
 

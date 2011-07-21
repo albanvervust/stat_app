@@ -2,6 +2,12 @@
   width: 900px;
 }
 
+/*Test d'ID*/
+
+/*lol {
+	background-color: #0f589A;
+}*/
+
 body {
   background: #77bcd6;
 }
@@ -16,7 +22,7 @@ header img {
 }
 
 section {
-  height: 300px;
+  height: 700px;
   margin-top: 30px;
   font-size: 110%;
   padding: 20px;
