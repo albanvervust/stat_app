@@ -1,15 +1,16 @@
 class VillesController < ApplicationController
   
   #def index
-#    @villes = Ville.all
- #   respond_to do |format|
-  #    format.html
-   #   format.json { render :json => @villes }
+    #@villes = Ville.all
+    
+    #respond_to do |format|
+      #format.html
+      #format.json { render :json => @villes }
     #end
   #end
  
   def index
-    @villes = Ville.all
+    @villes = Ville.where("asciiname like ?", "%#{params[:q]}%")
 
     respond_to do |format|
       format.html # index.html.erb

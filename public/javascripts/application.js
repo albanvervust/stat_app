@@ -5,3 +5,9 @@ $(function() {
     crossDomain: false,
   });
 });
+
+$(function() {
+  $("#info_instant_places").tokenInput("/villes.json", {
+    crossDomain: false,
+  });
+});

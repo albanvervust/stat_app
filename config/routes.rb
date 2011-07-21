@@ -14,7 +14,7 @@ StatApp::Application.routes.draw do
   match '/form',  :to => 'villes#form'
   
 
-  root :to => 'pages#home'
+  root :to => 'infos#new'
   
   # get "pages/home" 
   # get "pages/contact"

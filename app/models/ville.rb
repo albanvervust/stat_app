@@ -16,7 +16,7 @@
 #
 
 class Ville < ActiveRecord::Base
-  attr_accessible :isoname
+  attr_accessible :isoname, :asciiname
   belongs_to :region
   belongs_to :country
   has_many :infos
