@@ -27,8 +27,8 @@ class VillesController < ApplicationController
       format.xml  { render :xml => @ville }
     end
 
-    @infos = @user.infos.paginate(:page => params[:page])
-    @title = @user.name
+    #@infos = @user.infos.paginate(:page => params[:page])
+    #@title = @user.name
   end
   
 end

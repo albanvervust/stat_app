@@ -2,6 +2,7 @@
 
 <table>
   <tr>
+	<th>Id</th>
     <th>Age</th>
     <th>Taille</th>
     <th>Sexe</th>
@@ -11,6 +12,7 @@
 
 <% @infos.each do |info| %>
   <tr>
+	<td><%= info.id %></td>
     <td><%= info.age %></td>
     <td><%= info.taille %></td>
     <td><%= info.sexe %></td>

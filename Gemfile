@@ -10,6 +10,8 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'simple_form'
 gem 'jquery-rails'
 gem 'will_paginate', '3.0.pre2'
+gem 'taps'
+
 
 group :development do
 	gem 'annotate-models', '1.0.4'
